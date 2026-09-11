@@ -18,7 +18,6 @@ What surprised me:
 
 The acquisition was social, not algorithmic. The track surfaced inside a friend's Spotify Jam and he saved it to his own playlist from the shared session. He says although  his music taste is heavily impacted by his friends, he rarely discusses music reccomendations. Instead shared listening spaces like car rides, hangouts, and even social media post serve as an alternative access point for discovery. 
 His rejection behavior is more deliberate than skipping. He gives an unwanted recommendation roughly thirty seconds, then presses X to suppress it permanently. He is not deferring the track, he is correcting the system's model of him.
-He volunteered a specific failure condition rather than a general complaint: the recommendations break on genre-crossing artists, whom the system appears to file incorrectly and then compounds the error downstream.
 His own searching is not discovery. He builds mood-based playlists by recalling artists he already knows and mining their back catalogs. He is reorganizing a known library, not expanding it.
 
 ### Interview 2
@@ -29,7 +28,6 @@ Situation I asked about: A deliberate search two nights prior, when he was attem
 What surprised me:
 
 The search had two motives stacked on it. One was technical, reverse-engineering a sound off a sample of a disco record. The other was personal: he is Korean and was looking to connect the work to his own background. Neither motive is legible to a recommendation system, and he never asked one for help. The search resolved on a Reddit recommendations thread.
-He named YouTube as his single largest discovery channel, and his stated reason was about incentives rather than accuracy. Niche artists surface there because the platform is less oriented toward the music industry. He is evaluating the source's motives, not its hit rate.
 He dismissed his own service's algorithm outright and had no replacement strategy for it. Discovery had simply migrated to friends and to YouTube.
 He cited his network of fellow musicians as being almost "competitive" in their approach to reccomending music. Everyone wants to be the first to discover and share niche music as a testament to their taste and commitment to the craft of curation.
 When asked about confusing recommendations from algorithms, he redirected the question. His friction is with how music is organized and retrieved (playlist don't make sense), not with what gets suggested (the indivdual songs themselves are fine).
