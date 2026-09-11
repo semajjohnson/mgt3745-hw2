@@ -1,18 +1,8 @@
 # FEATURES.md
 
-**Name:**
-**Date:**
+**Name: Semaj Johnosn**
+**Date:09/10/2026**
 **Assignment:** HW2, MGT 3745 O
-
-> Replace every instruction block with your own writing. Delete instructions as you go.
-> Companion file: `USERS.md` (interviews, job statements, user profiles).
-> Both files are Context Scaffold artifacts. You carry them forward all semester.
-> Standard for this document: could two competent people disagree about whether a
-> statement was met? If yes, it is not yet a specification.
->
-> Aim for the **right altitude**: specific enough to guide behavior, flexible enough to
-> leave room for judgment. Hardcoding every branch is brittle. Vague guidance gives no
-> signal. Both fail.
 
 ---
 
@@ -23,25 +13,24 @@
 > Indifferent, or Reverse, with a one-line reason drawn from your research.
 > An honest "Indifferent" is worth more than a flattering "Attractive."
 
-**Classification date:**
-
+**Classification date: 09/10/2026**
 | # | Feature | Kano class | Reason from research |
 |---|---------|-----------|----------------------|
-| 1 |         |           |                      |
-| 2 |         |           |                      |
-| 3 |         |           |                      |
-| 4 |         |           |                      |
-| 5 |         |           |                      |
-| 6 |         |           |                      |
+| 1 | Auto-capture of tracks played in a shared listening session | Must-be | Both interviewees' most recent additions came from friends; the Jam save was the single highest-value moment observed. Without capture there is no pool. |
+| 2 | Every captured track carries the name of the person it came from | Must-be | Trust in a recommendation tracked entirely to the human attached to it. An unattributed track is indistinguishable from an algorithmic one. |
+| 3 | Pull from a designated person's active listening, not just live sessions | Attractive | Nobody asked for this. It closes the gap neither named: friend recommendations have the best hit rate but can't be summoned on demand. |
+| 4 | Filter and arrange the pool by mood or occasion | Performance | One interviewee builds mood playlists by hand from known artists. More control over the arrangement yields proportionally more satisfaction. |
+| 5 | Explanation of why a track surfaced | Indifferent | My HW1 adequacy sketch assumed this mattered. Neither interviewee ever asked why a friend's track appeared. When a person is attached, the "why" question does not arise. |
+| 6 | Algorithmic suggestions blended into the pool | Reverse | One interviewee auditions unwanted recommendations for ~30 seconds, then permanently suppresses them. Machine picks inside a human-sourced pool would actively degrade it. |
+
 
 ---
 
 ## 1. Context
 `part of Specification Quality, 30 pts total`
 
-> One paragraph. The job: who, in what situation, wanting what.
 
-*(your context here)*
+*People acquire the music they trust most from other people, but that material has nowhere to live. A track played in a friend's shared session disappears when the session ends unless it is saved in the moment. The system gives algorithmic recommendations a permanent home and gives human ones none. This is a collection point for music that arrived through a person, with the person still attached to it.*
 
 ---
 
@@ -49,20 +38,23 @@
 
 > Who this is for. Point back to the profiles in USERS.md rather than repeating them.
 
-*(your users here)*
+*Both profiles in USERS.md. Profile A (the Incidental Listener) is served on the capture side: high-trust material is retained without requiring presence of mind in the moment. Profile B (the Deliberate Digger) is served on the organization side, since their stated friction is retrieval rather than suggestion quality.*
 
 ---
 
 ## 3. Scope
 
 **This does:**
--
--
--
+- Capture tracks played in shared listening sessions the user participates in
+- Capture tracks from a small set of people the user explicitly designates
+- Store each captured track with the name of the person it came from
+- Let the user arrange the captured pool and promote items into playlists
 
 **This deliberately does not do:**
--
--
+- Generate recommendations of its own, or rank the pool by predicted preference
+- Capture artist names, genres, scenes, or links — playable tracks only
+- Capture from forums, threads, articles, or any non-person source
+- Attribute to anything other than a named person
 
 > Non-goals are what make the rest of this document checkable. A spec with no
 > non-goals cannot be violated, which means it cannot govern anything.
@@ -71,10 +63,17 @@
 
 ## 4. Behavior
 
-> What happens, in what order, under what conditions. The bulk of the document.
-> Write statements a stranger could follow without asking you what you meant.
+*A user designates between one and ten people as sources. Designation requires the designated person to accept; either side can end it at any time, which stops all future capture from that pairing.
 
-*(your behavior spec here)*
+When the user joins a shared listening session with a designated person, every track played for at least 30 continuous seconds is captured to the pool. Tracks the user already has in their library are not captured. Capture happens silently; the user is not interrupted mid-session.
+
+While a designation is active, a track a designated person plays at least three times within seven days is captured to the pool.
+
+Each pool item stores the track, the name of the person it came from, and the date. When the same track arrives from more than one person, it appears once and lists every source name.
+
+The user reviews the pool on demand. Each item can be promoted to a playlist, dismissed, or left. Dismissed items do not return from the same source. Nothing is removed from the pool automatically.
+
+The user may tag pool items with a mood or occasion label and filter by it. Labels are user-created; the system supplies none.*
 
 ---
 
@@ -82,28 +81,21 @@
 
 > What must hold regardless of design: platform, data, privacy, timing, budget.
 
-*(your constraints here)*
+*Requires a streaming platform API exposing both shared-session events and per-user playback history. Spotify is the assumed platform.
+Designation is mutual and revocable. No capture from anyone who has not accepted.
+Stores only captured tracks and their source names — never a designated person's full listening history.*
 
 ---
 
 ## 6. Acceptance
+>WHEN a track plays for 30 continuous seconds in a shared session with a designated person, THE SYSTEM SHALL add it to the pool with that person's name within 5 seconds of the session ending.
+>IF a captured track already exists in the user's library, THEN THE SYSTEM SHALL discard the capture and record nothing.
+>WHILE a designation is active, THE SYSTEM SHALL capture any track that person plays 3 or more times in a rolling 7-day window.
+>WHEN a designation is revoked by either party, THE SYSTEM SHALL stop all capture from that pairing within 60 seconds and retain items already captured.
+>THE SYSTEM SHALL display a source name on every pool item and SHALL NOT display any item without one.
+>IF the same track is captured from multiple people, THEN THE SYSTEM SHALL show one entry listing all source names.
+>WHEN a user dismisses a pool item, THE SYSTEM SHALL not re-capture that track from the same source.
 
-> How a reader would know the thing works. Write these in **EARS notation**.
->
-> - Event-driven: `WHEN [trigger], THE SYSTEM SHALL [response]`
-> - Unwanted:     `IF [condition], THEN THE SYSTEM SHALL [response]`
-> - Ubiquitous:   `THE SYSTEM SHALL [response]`
-> - State-driven: `WHILE [state], THE SYSTEM SHALL [response]`
-> - Optional:     `WHERE [feature present], THE SYSTEM SHALL [response]`
->
-> Vague: "The app should be fast."
-> EARS:  "WHEN an entry is saved, THE SYSTEM SHALL display it within 2 seconds."
-
-- [ ] WHEN ..., THE SYSTEM SHALL ...
-- [ ] IF ..., THEN THE SYSTEM SHALL ...
-- [ ] 
-
----
 
 ## Handoff Test
 `10 pts`
@@ -112,7 +104,7 @@
 > would they still have to ask you before they could start?
 > Every spec has gaps. Claiming none scores zero.
 
-*(your handoff test here)*
+*A stranger would have to ask three things. First, whether "shared listening session" means only a live Spotify Jam or also a collaborative playlist edited by two people — the capture rule is still not completely clear*
 
 ---
 
@@ -120,4 +112,4 @@
 
 > What you used AI for on this assignment, if anything. Write "none" if you did not use any.
 
-*(your note here)*
+  **
