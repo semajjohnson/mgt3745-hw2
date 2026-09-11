@@ -9,10 +9,6 @@
 ## Kano-Classified Feature List
 `15 pts`
 
-> At least six candidate features. Classify each as Must-be, Performance, Attractive,
-> Indifferent, or Reverse, with a one-line reason drawn from your research.
-> An honest "Indifferent" is worth more than a flattering "Attractive."
-
 **Classification date: 09/10/2026**
 | # | Feature | Kano class | Reason from research |
 |---|---------|-----------|----------------------|
@@ -51,11 +47,7 @@
 **This deliberately does not do:**
 - Generate recommendations of its own, or rank the pool by predicted preference
 - Capture artist names, genres, scenes, or links — playable tracks only
-- Capture from forums, threads, articles, or any non-person source
 - Attribute to anything other than a named person
-
-> Non-goals are what make the rest of this document checkable. A spec with no
-> non-goals cannot be violated, which means it cannot govern anything.
 
 ---
 
@@ -69,9 +61,7 @@ While a designation is active, a track a designated person plays at least three 
 
 Each pool item stores the track, the name of the person it came from, and the date. When the same track arrives from more than one person, it appears once and lists every source name.
 
-The user reviews the pool on demand. Each item can be promoted to a playlist, dismissed, or left. Dismissed items do not return from the same source. Nothing is removed from the pool automatically.
-
-The user may tag pool items with a mood or occasion label and filter by it. Labels are user-created; the system supplies none.*
+The user reviews the pool on demand. Each item can be promoted to a playlist, dismissed, or left. Dismissed items do not return from the same source. Nothing is removed from the pool automatically.*
 
 ---
 
@@ -87,7 +77,6 @@ Stores only captured tracks and their source names — never a designated person
 >WHEN a track plays for 30 continuous seconds in a shared session with a designated person, THE SYSTEM SHALL add it to the pool with that person's name within 5 seconds of the session ending.
 >IF a captured track already exists in the user's library, THEN THE SYSTEM SHALL discard the capture and record nothing.
 >WHILE a designation is active, THE SYSTEM SHALL capture any track that person plays 3 or more times in a rolling 7-day window.
->WHEN a designation is revoked by either party, THE SYSTEM SHALL stop all capture from that pairing within 60 seconds and retain items already captured.
 >THE SYSTEM SHALL display a source name on every pool item and SHALL NOT display any item without one.
 >IF the same track is captured from multiple people, THEN THE SYSTEM SHALL show one entry listing all source names.
 >WHEN a user dismisses a pool item, THE SYSTEM SHALL not re-capture that track from the same source.
