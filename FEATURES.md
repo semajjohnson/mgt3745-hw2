@@ -57,11 +57,9 @@
 
 When the user joins a shared listening session with a designated person, every track played for at least 30 continuous seconds is captured to the pool. Tracks the user already has in their library are not captured. Capture happens silently; the user is not interrupted mid-session.
 
-While a designation is active, a track a designated person plays at least three times within seven days is captured to the pool.
-
 Each pool item stores the track, the name of the person it came from, and the date. When the same track arrives from more than one person, it appears once and lists every source name.
 
-The user reviews the pool on demand. Each item can be promoted to a playlist, dismissed, or left. Dismissed items do not return from the same source. Nothing is removed from the pool automatically.*
+The user reviews the pool on demand. Each item can be promoted to a playlist, dismissed, or left. Dismissed items do not return from the same source.*
 
 ---
 
