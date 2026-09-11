@@ -18,7 +18,7 @@ What surprised me:
 
 The acquisition was social, not algorithmic. The track surfaced inside a friend's Spotify Jam and he saved it to his own playlist from the shared session. He says although  his music taste is heavily impacted by his friends, he rarely discusses music reccomendations. Instead shared listening spaces like car rides, hangouts, and even social media post serve as an alternative access point for discovery. 
 His rejection behavior is more deliberate than skipping. He gives an unwanted recommendation roughly thirty seconds, then presses X to suppress it permanently. He is not deferring the track, he is correcting the system's model of him.
-His own searching is not discovery. He builds mood-based playlists by recalling artists he already knows and mining their back catalogs. He is reorganizing a known library, not expanding it.
+He builds mood-based playlists by recalling artists he already knows and mining their back catalogs. He is reorganizing a known library, not expanding it.
 
 ### Interview 2
 Who: Friend, working musician (producer and drummer). Apple Music since 2018, plus heavy YouTube use. Listens to albums rather than playlists.
@@ -29,8 +29,7 @@ What surprised me:
 
 The search had two motives stacked on it. One was technical, reverse-engineering a sound off a sample of a disco record. The other was personal: he is Korean and was looking to connect the work to his own background. Neither motive is legible to a recommendation system, and he never asked one for help. The search resolved on a Reddit recommendations thread.
 He dismissed his own service's algorithm outright and had no replacement strategy for it. Discovery had simply migrated to friends and to YouTube.
-He cited his network of fellow musicians as being almost "competitive" in their approach to reccomending music. Everyone wants to be the first to discover and share niche music as a testament to their taste and commitment to the craft of curation.
-When asked about confusing recommendations from algorithms, he redirected the question. His friction is with how music is organized and retrieved (playlist don't make sense), not with what gets suggested (the indivdual songs themselves are fine).
+He cited his network of fellow musicians as being almost "competitive" in their approach to reccomending music. His friction is with how music is organized and retrieved (playlist don't make sense), not with what gets suggested (the indivdual songs themselves are fine).
 
 ---
 
@@ -54,13 +53,13 @@ When asked about confusing recommendations from algorithms, he redirected the qu
 
 ### Profile A
 Profile A — The Casual Listener
-Situation: Listens most days, nearly always alongside another activity — commuting, walking, working [known]. Uses mainstream streaming plus YouTube [known]. Doesn't treat music as a project and won't spend real time on it [assumed at segment level; known for one interviewee], but still wants what they listen to to feel genuinely theirs [assumed].
-Job they are hiring for: When they want something new, they want it to come from someone whose taste they already trust, so they can add it without second-guessing whether it's for them [known — one interviewee saved a track on the spot from a friend's shared listening session, with no evaluation step].
-What they do today instead: Pick music up socially, when it happens to cross their path [known]. Build mood playlists from artists they already know, going deeper into familiar catalogs rather than wider [known]. Prune unwanted recommendations aggressively — a short audition, then permanent suppression rather than a skip [known for one interviewee; assumed to generalize].
-Why today's approach is unsatisfying: The social route has the highest hit rate but can't be summoned on demand; it depends on being present when it happens [assumed — the behavior was reported, the frustration was not]. Algorithmic suggestions are distrusted, and at least one concrete failure mode was named: cross-genre artists get filed wrong and the error compounds [known]. Their own effort re-sorts a library rather than growing it, so taste stays where it is [known behavior; assumed to be experienced as a limitation].
+Situation: Listens most days, nearly always alongside another activity — commuting, walking, working [known]. Uses mainstream streaming plus YouTube [known]. Doesn't treat music as a project and won't spend real time on it [assumed], but still wants what they listen to to feel genuinely theirs [assumed].
+Job they are hiring for: When they want something new, they want it to come from someone whose taste they already trust, so they can add it without second-guessing whether it's for them [known].
+What they do today instead: Pick music up socially, when it happens to cross their path [known]. Build mood playlists from artists they already know, going deeper into familiar catalogs rather than wider [known].
+Why today's approach is unsatisfying: The social route has the highest hit rate but can't be summoned on demand; it depends on being present when it happens [assumed]. Their own effort re-sorts a library rather than growing it, so taste stays where it is [assumed].
 
 ### Profile B
-Situation: Musician, producer, or serious enthusiast for whom listening is also study [known]. Album-oriented rather than playlist-oriented [known for one interviewee; assumed across the segment]. Discovery is a sustained practice, not something that happens to them [known].
-Job they are hiring for: When they hear a sound they want to understand, they want to trace it back to the scene it came from, so they can work in that idiom themselves [known — one interviewee spent an evening reverse-engineering a disco production style]. Searches often carry a second motive beyond the music, such as identity or lineage [known for that interviewee, who was seeking out a scene tied to his own heritage; assumed to be common in the segment].
-What they do today instead: Friends first as the primary channel [known]. Video platforms and community forums for niche material, chosen on the basis of the source's incentives rather than its accuracy — less industry-driven means more trustworthy [assumed]. Manual assembly across several sources for any targeted search [known].
-Why today's approach is unsatisfying: They've written off their platform's recommendations entirely and haven't replaced them, so discovery lives outside the app where their library sits [known that this occurred; assumed that the split costs them something]. Reaching a niche scene takes effort across multiple tools with no guarantee of arriving [assumed — the path was described, the friction was not]. Their pain is organization and retrieval more than suggestion quality [known].
+Situation: Musician, producer, or serious enthusiast for whom listening is also study [known]. Album-oriented rather than playlist-oriented [known]. Discovery is a sustained practice, not something that happens to them [known].
+Job they are hiring for: When they hear a sound they want to understand, they want to trace it back to the scene it came from, so they can work in that idiom themselves [known ]. Searches often carry a second motive beyond the music, such as identity or lineage [known].
+What they do today instead: Friends first as the primary channel [known]. Video platforms and community forums for niche material, chosen on the basis of the source's incentives rather than its accuracy [assumed]. Manual assembly across several sources [known].
+Why today's approach is unsatisfying: They've written off their platform's recommendations entirely and haven't replaced them, so discovery lives outside the app where their library sits [known]. Reaching a niche scene takes effort across multiple tools with no guarantee of arriving [assumed]. Their pain is organization and retrieval more than suggestion quality [known].
