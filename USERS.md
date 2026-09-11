@@ -4,19 +4,10 @@
 **Date: 09/10/2026**
 **Assignment:** HW2, MGT 3745 O
 
-> Companion file: `FEATURES.md`. Complete this file first; the spec depends on it.
-> Both files are Context Scaffold artifacts you carry forward all semester. They are
-> also context engineering artifacts: the same document grounds a human developer and
-> an AI agent.
-
 ---
 
 ## Interview Synthesis
 `part of Research Integrity, 25 pts total`
-
-> Two interviews, roughly 15 minutes each, with real people, about past behavior.
-> Synthesis rather than transcripts. Report what surprised you: surprise is the signal
-> that you learned something instead of confirming something.
 
 ### Interview 1
 Friend, non-musician, listens daily across Spotify and YouTube. Listening is nearly always secondary to another activity: driving, walking, breaks at work.
