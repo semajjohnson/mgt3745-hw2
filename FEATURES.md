@@ -30,13 +30,11 @@
 `part of Specification Quality, 30 pts total`
 
 
-*People acquire the music they trust most from other people, but that material has nowhere to live. A track played in a friend's shared session disappears when the session ends unless it is saved in the moment. The system gives algorithmic recommendations a permanent home and gives human ones none. This is a collection point for music that arrived through a person, with the person still attached to it.*
+*People acquire the music they trust most from other people, but that material has nowhere to live. A track played in a friend's shared session disappears when the session ends unless it is saved in the moment. The system gives algorithmic recommendations a permanent home and gives human ones none. This is a collection point for music that arrived through a person, with the personal element still attached to it.*
 
 ---
 
 ## 2. Users
-
-> Who this is for. Point back to the profiles in USERS.md rather than repeating them.
 
 *Both profiles in USERS.md. Profile A (the Incidental Listener) is served on the capture side: high-trust material is retained without requiring presence of mind in the moment. Profile B (the Deliberate Digger) is served on the organization side, since their stated friction is retrieval rather than suggestion quality.*
 
@@ -79,8 +77,6 @@ The user may tag pool items with a mood or occasion label and filter by it. Labe
 
 ## 5. Constraints
 
-> What must hold regardless of design: platform, data, privacy, timing, budget.
-
 *Requires a streaming platform API exposing both shared-session events and per-user playback history. Spotify is the assumed platform.
 Designation is mutual and revocable. No capture from anyone who has not accepted.
 Stores only captured tracks and their source names — never a designated person's full listening history.*
@@ -100,16 +96,12 @@ Stores only captured tracks and their source names — never a designated person
 ## Handoff Test
 `10 pts`
 
-> Two or three sentences. If you handed this to a competent stranger tomorrow, what
-> would they still have to ask you before they could start?
-> Every spec has gaps. Claiming none scores zero.
-
 *A stranger would have to ask three things. First, whether "shared listening session" means only a live Spotify Jam or also a collaborative playlist edited by two people — the capture rule is still not completely clear*
 
 ---
 
 ## AI Use Note
 
-> What you used AI for on this assignment, if anything. Write "none" if you did not use any.
+> Used Claude to pressure-test my interview synthesis, draft and revise job statements and user profiles, and structure this specification. The interviews, the framing, and the decisions about scope and thresholds are mine.
 
-  **
+
